@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SanPham1.css">
+</head>
+
+<body>
+    <div class="nutgiohang">
+        <button onclick="h2()"><img src="image/icon/icon_shopping-removebg-preview-removebg-preview.png" width="150px"></button>
+    </div>
+    <div class="gh" style="display: none;" id="cart">
+        <table border="1">
+            <tr>
+                <td>STT</td>
+                <td>HÌNH</td>
+                <td>TÊN</td>
+                <td>GIÁ</td>
+                <td>SỐ LƯỢNG</td>
+                <td>TỔNG</td>
+            </tr>
+
+            <tbody id="mycart"></tbody>
+        </table>
+    </div>
+    <div class="maugiay">
+        <h3 class="a1">SẢN PHẨM BÁN CHẠY NHẤT MÙA NÀY</h3>
+        <div class="list-maugiay">
+            <div class="maugiay-item">
+                <img src="image/Giày Gucci.jpg">
+                <a href="#">Giày Gucci</a>
+                <p> <span>5990</span><b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Giày Para noise 2.0.jpg">
+                <a href="#">Giày Para noise 2.0</a>
+                <p><span>8990</span>  <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Giày MLB NY.jpg">
+                <a href="#">Giày MLB NY</a>
+                <p><span>5000</span>  <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Giày Nike Air Force 1.jpg">
+                <a href="#">Giày Nike Air Force 1</a>
+                <p><span>2500</span>  <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Giày Nike Air Jordan.jpg">
+                <a href="#">Giày Nike Air Jordan</a>
+                <p><span>3000</span>  <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+        </div>
+       
+            <div class="maugiay-item">
+                <img src="image/Nike Air Force 1.png">
+                <a href="#">Giày Nike Air Force 1</a>
+                <p><span>3000</span> <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Nike Air Jordan 1.png">
+                <a href="#">Giày Nike Air Jordan 1</a>
+                <p><span>3000</span> <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Giày Nike Air Jordan.jpg">
+                <a href="#">Giày Nike Air Jordan</a>
+                <p><span>3000</span> <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Giày Nike Air Jordan.jpg">
+                <a href="#">Giày Nike Air Jordan</a>
+                <p><span>3000</span> <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+            <div class="maugiay-item">
+                <img src="image/Nike Air Max 97.png">
+                <a href="#">Giày Nike Air Max 97</a>
+                <p><span>3000</span> <b>VNĐ</b></p>
+                <button class="themsp" onclick="addcart(this)">Thêm vào giỏ</button>
+            </div>
+        </div>
+    <script src="GioHang.js" async></script>
+</body>
+
+</html>

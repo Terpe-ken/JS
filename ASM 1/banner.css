@@ -1,0 +1,27 @@
+button {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-right: 8px;
+
+  }
+#hinh{
+  position: relative;
+  bottom: 90px;
+  left: 140px;
+}
+#button1{
+  position: relative;
+  right: 20px;
+  bottom: 320px;
+}
+#button2{
+  position: relative;
+  right: 1330px;
+  bottom: 320px;
+}
+
+
+
+
+  

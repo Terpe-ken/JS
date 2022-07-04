@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="dangnhap.css">
+</head>
+
+<body id="dangnhap">
+    <form action="" onsubmit="kiemtra()">
+
+        <table width="468" border="2" cellpadding="5" align="center">
+
+            <tr>
+                <th colspan="2">ĐĂNG NHẬP</th>
+            </tr>
+            <script>
+                function kiemtra() {
+                    var username = document.getElementById("username");
+                    var password = document.getElementById("password");
+                    if (username.value.length == 0) {
+                        alert("Chưa nhập TÊN TÀI KHOẢN !");
+                    }
+                    if (password.value.length == 0) {
+                        alert("Chưa nhập MẬT KHẨU !");
+                    }
+                }
+            </script>
+            <tr>
+                <td><b>TÊN TÀI KHOẢN</b></td>
+                <td>
+                    <input id="username" type="text" name="TÊN TÀI KHOẢN" size="30" placeholder="Nhập tên tài khoản">
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>MẬT KHẨU</b></td>
+                <td>
+                    <input id="password" type="password" name="MẬT KHẨU" size="30" placeholder="Nhập mật khẩu">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="Reset" name="Làm mới" value="Làm mới"> &nbsp;&nbsp;
+                    <input type="Submit" name="Xác Nhận" value=" Xác Nhận ">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+
+</html>

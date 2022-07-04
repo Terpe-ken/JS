@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="dangky.css">
+</head>
+
+<body id="dangky">
+    <form action="" onsubmit="kiemtra()">
+        <table width="468" border="2" cellpadding="5" align="center">
+
+            <tr>
+                <th colspan="2">ĐĂNG KÝ</th>
+            </tr>
+            <script>
+                function kiemtra() {
+                    let count = 0;
+                    var hovaten = document.getElementById("hovaten");
+                    var tentaikhoan = document.getElementById("tentaikhoan");
+                    var password = document.getElementById("password");
+                    var nhaplaipassword = document.getElementById("nhaplaipassword");
+                    var genders = document.getElementsByName("gender");
+                    var ngaysinh = document.getElementById("ngaysinh");
+                    var diachi = document.getElementById("diachi");
+                    var thongtincanhan = document.getElementById("thongtincanhan");
+                    var nguoisudung = document.getElementsByName("nguoisudung");
+                    if (hovaten.value.length == 0) {
+                        alert("Chưa nhập HỌ VÀ TÊN !");
+                    }
+                    if (tentaikhoan.value.length == 0) {
+                        alert("Chưa nhập TÊN TÀI KHOẢN !");
+                    }
+                    if (password.value.length == 0) {
+                        alert("Chưa nhập MẬT KHẨU !");
+                    }
+                    if (nhaplaipassword.value.length == 0) {
+                        alert("Chưa Nhập lại MẬT KHẨU !");
+                    }
+                    if (!genders[0].checked && !genders[1].checked) {
+                        alert("Chưa chọn Giới tính !");
+                    }
+                    if (date.value == "") {
+                        alert("Chưa chọn Ngày sinh !");
+                    }
+                    if (diachi.value.length == 0) {
+                        alert("Chưa nhập Địa chỉ !");
+                    }
+                }
+            </script>
+            <td><b>HỌ VÀ TÊN</b></td>
+            <td>
+                <input id="hovaten" type="text" name="HỌ VÀ TÊN" size="36" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif " placeholder="Nhập đầy đủ họ tên">
+            </td>
+            </tr>
+
+            <tr>
+                <td><b>TÊN TÀI KHOẢN</b></td>
+                <td>
+                    <input id="tentaikhoan" type="text" name="TÊN TÀI KHOẢNr" size="33" style="font-family:Arial, Helvetica, sans-serif ; " placeholder="Nhập tên đăng nhập">
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>MẬT KHẨU</b></td>
+                <td>
+                    <input id="password" type="Password" name="MẬT KHẨU" size="36" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; " placeholder="Nhập mật khẩu">
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>NHẬP LẠI</b></td>
+                <td>
+                    <input id="nhaplaipassword" type="Password" name="NHẬP LẠI" size="36" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; " placeholder="Nhập lại mật khẩu">
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>GIỚI TÍNH</b></td>
+                <td>
+                    <label><input type="radio" name="gender">Nam</label>
+                    <label><input type="radio" name="gender">Nữ</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>NGÀY SINH</b></td>
+                <td>
+                    <label>
+                        <input type="date" id="date">
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>ĐỊA CHỈ</b></td>
+                <td>
+                    <textarea id="diachi" placeholder="Nhập địa chỉ của bạn..."  type="text" col="20" style="width: 250px ; height: 30px "></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="Reset" name="Làm mới" value="Làm mới"> &nbsp;&nbsp;
+                    <input type="Submit" name="Xác Nhận" value=" Xác Nhận ">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
